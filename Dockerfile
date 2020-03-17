@@ -1,10 +1,6 @@
 # INSTALL PYTHON IMAGE 
-FROM python:3.7.5
+FROM python:3.7.7-alpine3.10
 MAINTAINER Roland <roviol@aaa.com.do> 
-
-RUN apt-get update
-RUN apt-get -y upgrade
-RUN apt-get -y install gcc
 
 COPY requerimientos.txt ./requerimientos.txt
 
